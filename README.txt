@@ -1,3 +1,3 @@
-A Pen created at CodePen.io. You can find this one at https://codepen.io/irenetomaini/pen/f76eb97e0460dba49af7218059eb293b.
+A simple app for searching GitHub profiles using GitHub Api.
 
- A call to Github API for searching profiles. UI with CSS Grid.
+Watch it here: https://github.com/ir3ne/github-profile-hunt.git
