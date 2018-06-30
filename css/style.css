@@ -1,0 +1,109 @@
+#root {
+  font-family: 'Share Tech Mono', monospace;
+  width: 1000px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 220px auto;
+  grid-gap: 20px;
+}
+#root #searchForm {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 200px;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+#root #searchForm #userName {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 1rem;
+}
+#root #searchForm #searchButton {
+  background-color: #dedede;
+  border: 1px solid black;
+  color: black;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/265330/Octocat.png");
+  background-size: 26%;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+#root #searchForm #searchButton:hover {
+  background-color: #cecece;
+}
+#root .loading {
+  grid-column: 1 / 4;
+  display: none;
+}
+#root .queries {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  grid-column: 1 / 4;
+}
+#root .queries .searched-queries li {
+  background-color: #eee;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2rem;
+  margin-right: 0.4rem;
+}
+#root .user {
+  grid-column: 1 / 2;
+}
+#root .user > div, #root .user > img {
+  margin-bottom: 1rem;
+}
+#root .user-avatar {
+  width: 100%;
+  border-radius: 10px;
+}
+#root .user-name {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+#root .user-bio {
+  font-size: .9rem;
+}
+#root .user-blog span {
+  color: blue;
+  font-size: .8rem;
+  text-decoration: underline;
+}
+#root .repositories {
+  grid-column: 2 / 4;
+}
+#root .repositories h2 {
+  font-size: 1.4rem;
+}
+#root .repositories-wall {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+}
+#root .repositories-wall-item {
+  border: 1px solid #d1d5da;
+  padding: 20px;
+  border-radius: 6px;
+  display: grid;
+}
+#root .repositories-wall-item__title {
+  color: #0366d6;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+#root .repositories-wall-item__description {
+  font-size: .8rem;
+  margin-bottom: 1.6rem;
+}
+#root .repositories-wall-item__language {
+  font-size: .8rem;
+  align-self: end;
+}
